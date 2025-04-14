@@ -22,7 +22,7 @@ int stack_num(char c)
 
 void timeout_occur()
 {
-    sleep(5);
+    sleep(5000);
 }
 
 int main()
@@ -51,7 +51,7 @@ int main()
         }
     }
 
-    if (stones_count >= 6)
+    if (stones_count >= 3)
     {
         timeout_occur();
     }

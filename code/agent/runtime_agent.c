@@ -95,6 +95,12 @@ int main()
 
     srand(time(NULL));
     char choice = rand() % n_stacks + 1;
+    for(int i = 0; i < 100; i++)
+    {
+        choice = rand() % n_stacks + 1;
+        if (board[stack_cap][choice] == 0)
+            break;
+    }
     printf("%c", stack_name(choice));
 
     return EXIT_SUCCESS;
